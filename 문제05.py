@@ -7,15 +7,19 @@ def solution(number):
         while current != 0:
             if current % 10 == 3 or current % 10 == 6 or current % 10 == 9:
                 count += 1
-                print("pair", end='')  # 디버깅을 위한 출력(없어도 무관)
             current = current // 10
-        if temp == count:
-            print(i, end='')  # 디버깅을 위한 출력(없어도 무관)
-        print(" ", end='')  # 디버깅을 위한 출력(없어도 무관)
-    print("")  # 디버깅을 위한 출력(없어도 무관)
     return count
 
+# for num in range(1, a + 1):
+#     # 해당하는 숫자가 박수를 몇 번 치는지
+#     while num:
+#         if num % 10 == 3 or num % 10 == 6 or num % 10 == 9:
+#             카운터 += 1
+#         num = num // 10
 
 # The following is code to output testcase.
+
 number = 40
 ret = solution(number)
+
+print(ret)
